@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp } from "lucide-react";
 import eatonLogo from "@assets/EAton_1749638488093.png";
 import xtremeLogo from "@assets/ExtremePowerConversions_1749638498676.png";
+import singlePhaseUPS1 from "@assets/singleups1.png";
+
+
 
 export default function SinglePhaseUPS() {
   const manufacturers = [
@@ -131,9 +134,9 @@ export default function SinglePhaseUPS() {
                 </p>
               </div>
               <img 
-                src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={singlePhaseUPS1} 
                 alt="Single Phase UPS System"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-60 h-80 object-cover rounded-lg shadow-md"
               />
             </div>
           </CardContent>

@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Drill, Battery, Shield, AlertTriangle } from "lucide-react";
 
+import hitec1Image from "@assets/1hitec_1750054560925.jpg";
+
+import batteryConditioning2 from "@assets/BatteryConditioning2_1750054592058.png";
+
 export default function Services() {
   const semiAnnualServices = [
     "Complete visual inspection of all internal sub-assemblies, wiring harnesses, contactors, cables, and major components",
@@ -88,7 +92,7 @@ export default function Services() {
             <div className="flex flex-col lg:flex-row items-start mb-8">
               <div className="lg:w-1/3 mb-6 lg:mb-0 lg:mr-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  src={hitec1Image}
                   alt="UPS Service Technician" 
                   className="w-full h-64 object-cover rounded-lg shadow-md"
                 />
@@ -164,7 +168,7 @@ export default function Services() {
             <div className="flex flex-col lg:flex-row items-start mb-8">
               <div className="lg:w-1/3 mb-6 lg:mb-0 lg:mr-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  src={batteryConditioning2}
                   alt="VRLA Battery Service" 
                   className="w-full h-64 object-cover rounded-lg shadow-md"
                 />

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import globeImage from "@assets/Screen Shot 2025-06-10 at 8.05.29 PM_1749611176851.png";
+import globeImage from "@assets/earthreal.png";
 
 interface LogoProps {
   className?: string;

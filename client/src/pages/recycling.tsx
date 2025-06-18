@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Recycle, Leaf, Shield, TrendingUp, CheckCircle, Truck, Factory } from "lucide-react";
 
+import rec from "@assets/recycle.png";
+
+import pine from "@assets/pine.jpg"
+
 export default function Recycling() {
   const processSteps = [
     {
@@ -64,7 +68,7 @@ export default function Recycling() {
           <CardContent className="p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={pine}
                 alt="Battery Recycling Facility" 
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -157,9 +161,9 @@ export default function Recycling() {
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <img 
-                src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=200" 
+                src={rec}
                 alt="Electronic Waste Management" 
-                className="w-full h-32 object-cover rounded-lg mb-4"
+                className="w-40 h-40 object-cover rounded-lg mb-4"
               />
               <h4 className="text-lg font-bold emerald-blue mb-2">Electronic Waste Management</h4>
               <p className="text-sm text-gray-600">
@@ -185,22 +189,7 @@ export default function Recycling() {
           </Card>
         </div>
 
-        {/* Liability Protection */}
-        <Card className="bg-gray-100 shadow-lg">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <Shield className="h-6 w-6 emerald-blue mr-3" />
-              <h3 className="text-xl font-bold text-gray-900">Complete Liability Protection</h3>
-            </div>
-            <p className="text-gray-700 leading-relaxed">
-              Emerald Power agrees to defend, indemnify, and hold harmless our customers, their parent companies, 
-              subsidiaries, and affiliated companies (if applicable) and their respective shareholders, officers, 
-              directors, principals, agents and employees against any and all losses, liabilities, damages, injuries, 
-              claims, demands, causes of action, costs and expenses arising out of Emerald Power's transportation of 
-              waste batteries obtained from customer sites.
-            </p>
-          </CardContent>
-        </Card>
+        
       </div>
     </div>
   );

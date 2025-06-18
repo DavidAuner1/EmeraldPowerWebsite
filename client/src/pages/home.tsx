@@ -17,6 +17,15 @@ import {
   CheckCircle
 } from "lucide-react";
 
+import a from "@assets/Intensium Shift Energy Storage Lineup_1749633556051.png";
+import b from "@assets/ac3.png";
+import c from "@assets/1hitec_1750054560925.jpg";
+import d from "@assets/hitecgen.jpg";
+import e from "@assets/singleups1.png";
+import f from "@assets/Lightinginvert5.png";
+import g from "@assets/BatteryConditioningSystems1_1750054601075.png";
+import h from "@assets/eaton1.jpg";
+
 export default function Home() {
   const powerProblems = [
     {
@@ -249,11 +258,13 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link href="/battery-energy-storage">
+            <Link href="/battery-energy-storage"  onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={a}
                     alt="Battery Energy Storage" 
                     className="w-full h-48 object-cover"
                   />
@@ -266,11 +277,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/three-phase-static-ups">
+            <Link href="/three-phase-static-ups" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={b}
                     alt="Three Phase Static UPS" 
                     className="w-full h-48 object-cover"
                   />
@@ -283,11 +296,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/three-phase-rotary-ups">
+            <Link href="/three-phase-rotary-ups" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={d}
                     alt="Three Phase Rotary UPS" 
                     className="w-full h-48 object-cover"
                   />
@@ -300,11 +315,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/single-phase-ups">
+            <Link href="/single-phase-ups" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={e}
                     alt="Single Phase UPS" 
                     className="w-full h-48 object-cover"
                   />
@@ -317,11 +334,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/lighting-inverters">
+            <Link href="/lighting-inverters" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={f}
                     alt="Lighting Inverters" 
                     className="w-full h-48 object-cover"
                   />
@@ -334,11 +353,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/battery-conditioning">
+            <Link href="/battery-conditioning" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={g}
                     alt="Battery Conditioning" 
                     className="w-full h-48 object-cover"
                   />
@@ -351,11 +372,13 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/capacitor-banks">
+            <Link href="/capacitor-banks" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    src={h}
                     alt="Capacitor Banks" 
                     className="w-full h-48 object-cover"
                   />
@@ -371,39 +394,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Battery Conditioning Systems */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Battery Conditioning Systems</h2>
-            <p className="text-lg text-gray-600">Comprehensive monitoring and conditioning capabilities for all battery types</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {batteryTypes.map((battery, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 bg-emerald-green rounded-lg mr-4">
-                      <battery.icon className="h-6 w-6 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">{battery.title}</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">{battery.description}</p>
-                  <ul className="space-y-2">
-                    {battery.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-500">
-                        <CheckCircle className="h-4 w-4 text-emerald-green mr-2" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

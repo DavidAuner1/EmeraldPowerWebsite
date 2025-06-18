@@ -14,6 +14,8 @@ import hitec2Image from "@assets/2hitec_1750054560927.jpg";
 import hitec3Image from "@assets/3hitec_1750054566229.jpg";
 import hitec4Image from "@assets/4hitec_1750054595627.png";
 
+const hitecImages = [hitec1Image, hitec2Image, hitec3Image, hitec4Image];
+
 import hitecgen from "@assets/hitecgen.jpg";
 
 export default function ThreePhaseRotaryUPS() {
@@ -344,19 +346,20 @@ export default function ThreePhaseRotaryUPS() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {products.map((product, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
-                >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-48 object-cover rounded-lg mb-4"
-                    onError={(e) => {
-                      e.currentTarget.src =
-                        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200";
-                    }}
+              
+                    {products.map((product, index) => (
+                      <div
+                        key={index}
+                        className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                      >
+                        <img
+                          src={hitecImages[index]}
+                          alt={product.name}
+                          className="w-full h-48 object-cover rounded-lg mb-4"
+                          onError={(e) => {
+                            e.currentTarget.src =
+                              "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200";
+                          }}
                   />
                   <h3 className="text-xl font-bold mb-2">{product.name}</h3>
                   <div className="bg-emerald-green bg-opacity-10 p-3 rounded-lg mb-4">

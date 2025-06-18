@@ -153,7 +153,7 @@ export default function BatteryConditioning() {
                 </p>
               </div>
               <img 
-                src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={batteryConditioning1}
                 alt="Battery Monitoring System"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -252,13 +252,18 @@ export default function BatteryConditioning() {
           </CardContent>
         </Card>
 
+
+
+
+        
+      
         {/* Our Approach */}
         <Card className="mb-12 shadow-lg">
           <CardContent className="p-8">
             <h2 className="text-3xl font-bold emerald-blue mb-6">Our Approach / How It Works</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <img 
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={batteryConditioning2}
                 alt="Battery Monitoring Installation"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -357,6 +362,9 @@ export default function BatteryConditioning() {
           </CardContent>
         </Card>
       </div>
+
+      
+    
     </div>
   );
 }

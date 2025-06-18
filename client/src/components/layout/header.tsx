@@ -26,7 +26,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-emerald-blue rounded-lg">
+            <Link href="/" onClick={() => {
+                window.scrollTo(0, 0);
+              }} className="focus:outline-none focus:ring-2 focus:ring-emerald-blue rounded-lg">
               <Logo size="md" />
             </Link>
           </div>
@@ -44,7 +46,9 @@ export default function Header() {
                       <div className="w-80 p-4">
                         <div className="grid gap-3">
                           {productItems.map((item, index) => (
-                            <Link key={index} href={item.href}>
+                            <Link key={index} href={item.href}onClick={() => {
+                                window.scrollTo(0, 0);
+                              }} >
                               <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
                                 <item.icon className="h-5 w-5 text-emerald-blue" />
                                 <span className="text-sm font-medium text-gray-700">{item.title}</span>
@@ -58,19 +62,25 @@ export default function Header() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <Link href="/services">
+              <Link href="/services" onClick={() => {
+                  window.scrollTo(0, 0);
+                }}>
                 <Button variant="ghost" className="text-gray-700 hover:text-emerald-blue font-medium">
                   Services
                 </Button>
               </Link>
 
-              <Link href="/recycling">
+              <Link href="/recycling" onClick={() => {
+                  window.scrollTo(0, 0);
+                }} >
                 <Button variant="ghost" className="text-gray-700 hover:text-emerald-blue font-medium">
                   Recycling
                 </Button>
               </Link>
 
-              <Link href="/quote">
+              <Link href="/quote" onClick={() => {
+                  window.scrollTo(0, 0);
+                }}>
                 <Button className="bg-emerald-blue hover:bg-emerald-blue-dark text-white font-medium">
                   Get Quote
                 </Button>

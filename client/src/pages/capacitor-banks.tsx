@@ -2,6 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp } from "lucide-react";
 
+import capacitorBank1 from "@assets/eaton1.jpg";
+
+import capacitorBank2 from "@assets/eaton2.png";
+
 export default function CapacitorBanks() {
   const useCases = [
     { icon: "🏭", title: "Industrial Facilities", description: "Power factor correction for manufacturing plants" },
@@ -72,7 +76,7 @@ export default function CapacitorBanks() {
                 </p>
               </div>
               <img 
-                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={capacitorBank1}
                 alt="Capacitor Bank Installation"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -123,7 +127,7 @@ export default function CapacitorBanks() {
             <h2 className="text-3xl font-bold emerald-blue mb-6">Our Approach / How It Works</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <img 
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src={capacitorBank2}
                 alt="Power Factor Analysis"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
